@@ -943,9 +943,15 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 
   .site-header {
-    margin-bottom: -4px;
+    margin-bottom: -34px;
     padding-bottom: 0;
     padding-top: 14px;
+  }
+
+  .campaign-global-pause > p:first-child .campaign-sentence:first-child {
+    font-size: clamp(19px, 5.5vw, 22px);
+    letter-spacing: -.02em;
+    white-space: nowrap;
   }
 
   .campaign-survey-inline {
