@@ -1052,7 +1052,7 @@ button:disabled { cursor: wait; opacity: .7; }
   .mobile-action-panel {
     margin: 0 0 40px;
     position: relative;
-    top: 5px;
+    top: 10px;
   }
 
   .mobile-action-button .preserve-case,
