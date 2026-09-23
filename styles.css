@@ -717,7 +717,7 @@ button:disabled { cursor: wait; opacity: .7; }
     left: 0;
     margin: 0;
     position: absolute;
-    top: 2993px;
+    top: 2913px;
   }
 
   .campaign-global-pause > p:last-of-type::after {
