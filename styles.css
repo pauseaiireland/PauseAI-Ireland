@@ -654,14 +654,6 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 }
 
-/* Present the original large desktop composition at normal browser zoom. */
-@media (min-width: 701px) {
-  body:not(.representatives-body) {
-    width: 400%;
-    zoom: .25;
-  }
-}
-
 .mobile-action-panel { display: none; }
 .campaign-mobile-wave { display: none; }
 .representatives-page { box-sizing: border-box; margin: 0 auto; max-width: 1100px; padding: 110px 48px 160px; }
@@ -862,9 +854,54 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 
   /* Let the small mobile wave run slightly past the shared content margin. */
+  .campaign-only .campaign-regulation {
+    display: none !important;
+  }
+
+  .campaign-regulation-copy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campaign-intro {
+    order: 1;
+  }
+
+  .data-centres-section {
+    display: contents;
+  }
+
+  .data-centres-section > .data-centres-title,
+  .data-centres-section > p:not(:last-child) {
+    display: none !important;
+  }
+
+  .data-centres-section > p:last-child {
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
+    order: 2;
+  }
+
+  .data-centres-section > p:last-child .campaign-sentence {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .campaign-why-section h2,
+  .campaign-regulation-block h2 {
+    border-bottom: 5px solid var(--white);
+  }
+
   .campaign-mobile-wave {
+    height: 60px;
     margin-left: -10px;
     margin-right: -10px;
     width: calc(100% + 20px);
+  }
+
+  .campaign-mobile-wave path {
+    stroke-width: 30px;
   }
 }
