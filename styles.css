@@ -904,4 +904,26 @@ button:disabled { cursor: wait; opacity: .7; }
   .campaign-mobile-wave path {
     stroke-width: 30px;
   }
+
+  /* Mobile calls to action come before the Ireland and global campaign copy. */
+  .campaign-regulation-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-action-panel {
+    order: 1;
+  }
+
+  .campaign-regulation-block > h2 {
+    order: 2;
+  }
+
+  .campaign-regulation-copy {
+    order: 3;
+  }
+
+  .campaign-global-pause {
+    order: 4;
+  }
 }
