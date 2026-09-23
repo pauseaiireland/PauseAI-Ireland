@@ -667,12 +667,14 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 
   .campaign-regulation-block::before {
-    width: calc(1600vw + 58px);
+    left: -2160px;
+    width: 5120px;
   }
 
   .campaign-global-globe,
   .campaign-wave-tail {
-    width: calc(1600vw - 2102px);
+    margin-left: -2160px;
+    width: 5120px;
   }
 }
 
