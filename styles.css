@@ -663,6 +663,16 @@ button:disabled { cursor: wait; opacity: .7; }
     width: 400%;
     zoom: .25;
   }
+
+  /* Match the four-times wider desktop canvas used by the original layout. */
+  .campaign-regulation-block::before {
+    width: calc(400vw + 58px);
+  }
+
+  .campaign-global-globe,
+  .campaign-wave-tail {
+    width: calc(400vw - 2102px);
+  }
 }
 
 .representatives-page { box-sizing: border-box; margin: 0 auto; max-width: 1100px; padding: 110px 48px 160px; }
