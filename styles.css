@@ -133,6 +133,27 @@ button:disabled { cursor: wait; opacity: .7; }
 .action-panel .petition-section { margin-bottom: 0; }
 .site-footer { left: -300px; padding: 126px 0 0; position: relative; }
 @media (max-width: 700px) {
+  /* Keep the mobile campaign focused on the local call to action. */
+  .campaign-only .campaign-regulation {
+    display: none;
+  }
+
+  .data-centres-section > .data-centres-title {
+    display: none;
+  }
+
+  .campaign-why-section h2,
+  .campaign-regulation-block h2 {
+    border-bottom: 5px solid var(--white);
+    display: inline-block;
+  }
+
+  .campaign-mobile-wave {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+
   .side-wave { display: none; }
   .subpage { min-height: calc(100vh - 154px); padding: 80px 24px; }
   .subpage-kicker { font-size: 18px; }
@@ -838,5 +859,12 @@ button:disabled { cursor: wait; opacity: .7; }
 
   .representatives-letter p {
     margin-bottom: 26px;
+  }
+
+  /* Let the small mobile wave run slightly past the shared content margin. */
+  .campaign-mobile-wave {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
   }
 }
