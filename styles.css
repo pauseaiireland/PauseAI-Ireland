@@ -941,6 +941,15 @@ button:disabled { cursor: wait; opacity: .7; }
     margin-bottom: 24px;
   }
 
+  .site-header {
+    padding-bottom: 6px;
+    padding-top: 4px;
+  }
+
+  .campaign-survey-inline {
+    margin-top: -50px;
+  }
+
   .campaign-regulation-block {
     margin-top: 0;
   }
