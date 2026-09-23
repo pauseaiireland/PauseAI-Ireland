@@ -514,3 +514,155 @@ button:disabled { cursor: wait; opacity: .7; }
     white-space: nowrap;
   }
 }
+
+/* Mobile campaign order and spacing. */
+@media (max-width: 700px) {
+  .campaign-only {
+    padding: 36px 24px 72px;
+  }
+
+  .campaign-only > .subpage-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .campaign-only .subpage-vectors,
+  .campaign-climate-divider {
+    display: none;
+  }
+
+  .campaign-regulation-block {
+    margin-top: 36px;
+    order: 1;
+    width: 100%;
+  }
+
+  #contact {
+    margin-top: 56px;
+    order: 2;
+    width: 100%;
+  }
+
+  .campaign-contact-copy,
+  .campaign-contact-copy .contact-directory {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .campaign-global-pause {
+    display: flex;
+    flex-direction: column;
+    padding-top: 52px;
+  }
+
+  .campaign-global-pause > p {
+    order: 1;
+  }
+
+  .campaign-global-pause > p:last-of-type::after {
+    display: none;
+  }
+
+  .campaign-global-globe {
+    color: var(--white);
+    display: block;
+    height: 76px;
+    margin: 28px 0 0;
+    order: 2;
+    position: relative;
+    width: 100%;
+  }
+
+  .campaign-pause-mark {
+    align-items: center;
+    background: var(--white);
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    gap: 12px;
+    height: 68px;
+    justify-content: center;
+    left: auto;
+    margin: -58px auto 30px;
+    order: 3;
+    position: relative;
+    top: auto;
+    transform: none;
+    width: 68px;
+    z-index: 1;
+  }
+
+  .campaign-pause-mark span {
+    background: var(--orange);
+    height: 30px;
+    width: 8px;
+  }
+
+  .campaign-events-copy {
+    margin: 0;
+    order: 4;
+  }
+
+  .campaign-events-copy .subpage-content {
+    align-items: stretch;
+  }
+
+  .campaign-events-copy .events-coming-soon,
+  .campaign-events-copy .events-action h1 {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .events-page .subpage-content .events-coming-soon {
+    margin-top: 0;
+  }
+
+  .events-page .events-action h1 {
+    display: block;
+  }
+
+  .events-page .events-action .events-action-intro {
+    margin: 26px 0 48px;
+  }
+
+  .events-letter {
+    font-size: 17px;
+  }
+}
+
+/* Present the original large desktop composition at normal browser zoom. */
+@media (min-width: 701px) {
+  body {
+    width: 400%;
+    zoom: .25;
+  }
+}
+
+@media (max-width: 700px) {
+  .campaign-why-section h2 {
+    font-size: clamp(20px, 6vw, 28px);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .campaign-petition-panel {
+    width: 100%;
+  }
+
+  .campaign-petition-link {
+    background: var(--white);
+    color: var(--orange);
+    display: block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
