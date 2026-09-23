@@ -717,7 +717,18 @@ button:disabled { cursor: wait; opacity: .7; }
     left: 0;
     margin: 0;
     position: absolute;
-    top: 3153px;
+    top: 3113px;
+  }
+
+  .campaign-global-pause > p:last-of-type::after {
+    display: none;
+  }
+
+  .campaign-events-copy .events-action h1 {
+    border-bottom: 8px solid var(--white);
+    display: block;
+    padding-bottom: 36px;
+    width: 100%;
   }
 
   .campaign-global-globe,
