@@ -656,6 +656,15 @@ button:disabled { cursor: wait; opacity: .7; }
 
 .mobile-action-panel { display: none; }
 .campaign-mobile-wave { display: none; }
+
+/* The desktop artwork was composed on a four-times larger canvas. */
+@media (min-width: 701px) {
+  body:not(.representatives-body) {
+    width: 400%;
+    zoom: .25;
+  }
+}
+
 .representatives-page { box-sizing: border-box; margin: 0 auto; max-width: 1100px; padding: 110px 48px 160px; }
 .representatives-page h1 { border-bottom: 6px solid var(--white); display: inline-block; font-family: "Roboto Condensed", sans-serif; font-size: 64px; line-height: 1; margin: 0 0 62px; padding-bottom: 16px; text-transform: uppercase; }
 .representatives-letter { font-family: "Roboto Condensed", sans-serif; font-size: 27px; line-height: 1.35; }
@@ -925,5 +934,44 @@ button:disabled { cursor: wait; opacity: .7; }
 
   .campaign-global-pause {
     order: 4;
+  }
+
+  /* Close the action-to-copy gap and use the full white wave treatment. */
+  .campaign-why-section {
+    margin-bottom: 24px;
+  }
+
+  .campaign-regulation-block {
+    margin-top: 0;
+  }
+
+  .mobile-action-panel {
+    margin: 0 0 40px;
+  }
+
+  .campaign-mobile-wave {
+    color: var(--white);
+    display: block;
+    height: 370px;
+    margin: 34px -24px 0;
+    order: 2;
+    width: calc(100% + 48px);
+  }
+
+  .campaign-pause-mark {
+    background: transparent;
+    border: 10px solid var(--orange);
+    border-radius: 50%;
+    gap: 28px;
+    height: 230px;
+    margin: -300px auto 100px;
+    order: 3;
+    width: 230px;
+  }
+
+  .campaign-pause-mark span {
+    background: var(--orange);
+    height: 98px;
+    width: 25px;
   }
 }
