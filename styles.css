@@ -657,6 +657,63 @@ button:disabled { cursor: wait; opacity: .7; }
 .mobile-action-panel { display: none; }
 .campaign-mobile-wave { display: none; }
 
+/* Desktop-only sizing for the header and two pause marks. */
+@media (min-width: 701px) {
+  .site-header {
+    height: 48px;
+    padding: 3px 24px 0;
+  }
+
+  .site-header::before,
+  .site-header::after {
+    height: 2px;
+  }
+
+  .site-banner-logo {
+    width: 140px;
+  }
+
+  .site-header nav {
+    gap: 22px;
+    margin: 0;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .site-header nav a {
+    font-size: 14px;
+  }
+
+  .campaign-top-pause {
+    border-width: 4px;
+    gap: 25px;
+    height: 200px;
+    top: 72px;
+    transform: translateX(-50%);
+    width: 200px;
+  }
+
+  .campaign-top-pause span {
+    height: 105px;
+    width: 29px;
+  }
+
+  .campaign-pause-mark {
+    border-width: 12px;
+    gap: 33px;
+    height: 275px;
+    top: -20px;
+    width: 275px;
+  }
+
+  .campaign-pause-mark span {
+    height: 125px;
+    width: 30px;
+  }
+}
+
 .representatives-page { box-sizing: border-box; margin: 0 auto; max-width: 1100px; padding: 110px 48px 160px; }
 .representatives-page h1 { border-bottom: 6px solid var(--white); display: inline-block; font-family: "Roboto Condensed", sans-serif; font-size: 64px; line-height: 1; margin: 0 0 62px; padding-bottom: 16px; text-transform: uppercase; }
 .representatives-letter { font-family: "Roboto Condensed", sans-serif; font-size: 27px; line-height: 1.35; }
