@@ -322,7 +322,7 @@ button:disabled { cursor: wait; opacity: .7; }
   .campaign-why-section h2 { border-bottom: 8px solid var(--white); display: inline-block; font-family: "Roboto Condensed", sans-serif; font-size: 88px; line-height: 1; margin: 0 0 54px; padding-bottom: 20px; text-transform: uppercase; }
   .campaign-why-section p { font-family: "Roboto Condensed", sans-serif; font-size: 78px !important; line-height: 1.18; margin: 0 0 62px; max-width: none !important; width: 3500px; }
   .campaign-why-section .campaign-survey-inline { font-weight: 700; }
-  .campaign-petition-panel { color: var(--white); left: 50%; position: absolute; right: auto; text-align: center; top: 1200px; transform: translateX(-50%) scale(1.8); transform-origin: top center; width: 720px; }
+  .campaign-petition-panel { color: var(--white); left: calc(200vw - 30px); position: absolute; right: auto; text-align: center; top: 1200px; transform: translateX(-50%) scale(1.8); transform-origin: top center; width: 720px; }
   .campaign-section-divider { background: var(--white); height: 8px; left: 200px; position: absolute; right: 200px; top: 3470px; }
   .campaign-petition-panel h2 { border-bottom: 8px solid var(--white); display: inline-block; font-family: "Roboto Condensed", sans-serif; font-size: 76px; line-height: 1; margin: 0 0 32px; padding-bottom: 20px; text-transform: uppercase; }
   .campaign-petition-link { background: var(--white); color: var(--orange); display: block; font-family: "Roboto Condensed", sans-serif; font-size: 80px; font-weight: 700; line-height: 1; padding: 28px; text-decoration: none; text-transform: uppercase; }
