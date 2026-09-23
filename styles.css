@@ -663,19 +663,58 @@ button:disabled { cursor: wait; opacity: .7; }
 @media (min-width: 701px) {
   body {
     zoom: .25;
-    width: 400%;
   }
 
-  .campaign-regulation-block::before {
-    height: 1500px;
-    left: -2160px;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
+  /* Keep the large coordinate system only where the desktop campaign uses it.
+     The header must remain the actual browser width so its logo and nav stay
+     visible. */
+  .campaign-only {
+    max-width: none;
+    min-width: 5120px;
     width: 5120px;
   }
 
+  /* The white global panel belongs to the global pause symbol.  Anchoring it
+     here keeps its straight top edge, circle and shallow lower wave together
+     at every desktop width. */
+  .campaign-regulation-block::before {
+    display: none;
+  }
+
+  .campaign-global-pause {
+    isolation: isolate;
+    z-index: 10;
+  }
+
+  .campaign-global-pause::before {
+    background: var(--white);
+    content: "";
+    height: 1500px;
+    left: -2380px;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    position: absolute;
+    top: -160px;
+    width: 5120px;
+    z-index: 0;
+  }
+
   .campaign-pause-mark {
+    left: 730px;
     top: -22px;
+    z-index: 4;
+  }
+
+  /* Preserve the desktop letter's original, separate placement. */
+  .campaign-events-copy {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 2793px;
   }
 
   .campaign-global-globe,
