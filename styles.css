@@ -725,9 +725,20 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 
   .campaign-events-copy .events-action h1 {
-    border-bottom: 8px solid var(--white);
+    border-bottom: 0;
     display: block;
-    padding-bottom: 36px;
+    padding-bottom: 44px;
+    position: relative;
+    width: 100%;
+  }
+
+  .campaign-events-copy .events-action h1::after {
+    background: var(--white);
+    bottom: -12px;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
     width: 100%;
   }
 
