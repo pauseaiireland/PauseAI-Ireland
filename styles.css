@@ -657,12 +657,22 @@ button:disabled { cursor: wait; opacity: .7; }
 .mobile-action-panel { display: none; }
 .campaign-mobile-wave { display: none; }
 
-/* The original desktop artwork uses a four-times design canvas.  Scale that
-   canvas once at the root so it renders at its intended size at browser 100%.
-   Mobile has its own layout below and is deliberately excluded. */
+/* Desktop artwork was authored on a four-times design canvas.  Keep that
+   canvas intact and scale its full width once, matching the layout previously
+   seen only at browser 25%.  Mobile stays outside this rule. */
 @media (min-width: 701px) {
-  html {
+  body {
     zoom: .25;
+    width: 400%;
+  }
+
+  .campaign-regulation-block::before {
+    width: calc(400vw + 58px);
+  }
+
+  .campaign-global-globe,
+  .campaign-wave-tail {
+    width: calc(400vw - 2102px);
   }
 }
 
