@@ -943,7 +943,9 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 
   .site-header {
-    margin-bottom: -34px;
+    height: 102px;
+    margin-bottom: 0;
+    min-height: 102px;
     padding-bottom: 0;
     padding-top: 14px;
   }
