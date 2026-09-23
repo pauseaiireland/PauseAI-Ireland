@@ -673,6 +673,24 @@ button:disabled { cursor: wait; opacity: .7; }
   .campaign-wave-tail {
     width: calc(400vw - 2102px);
   }
+
+  /* Preserve the three foreground desktop elements above the campaign canvas. */
+  .site-header {
+    z-index: 20;
+  }
+
+  .site-banner-logo,
+  .site-header nav {
+    z-index: 21;
+  }
+
+  .campaign-top-pause {
+    z-index: 5;
+  }
+
+  .campaign-pause-mark {
+    z-index: 4;
+  }
 }
 
 .representatives-page { box-sizing: border-box; margin: 0 auto; max-width: 1100px; padding: 110px 48px 160px; }
