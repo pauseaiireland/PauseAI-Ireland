@@ -657,60 +657,12 @@ button:disabled { cursor: wait; opacity: .7; }
 .mobile-action-panel { display: none; }
 .campaign-mobile-wave { display: none; }
 
-/* Desktop-only sizing for the header and two pause marks. */
+/* The original desktop artwork uses a four-times design canvas.  Scale that
+   canvas once at the root so it renders at its intended size at browser 100%.
+   Mobile has its own layout below and is deliberately excluded. */
 @media (min-width: 701px) {
-  .site-header {
-    height: 48px;
-    padding: 3px 24px 0;
-  }
-
-  .site-header::before,
-  .site-header::after {
-    height: 2px;
-  }
-
-  .site-banner-logo {
-    width: 140px;
-  }
-
-  .site-header nav {
-    gap: 22px;
-    margin: 0;
-    position: absolute;
-    right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .site-header nav a {
-    font-size: 14px;
-  }
-
-  .campaign-top-pause {
-    border-width: 4px;
-    gap: 25px;
-    height: 200px;
-    top: 72px;
-    transform: translateX(-50%);
-    width: 200px;
-  }
-
-  .campaign-top-pause span {
-    height: 105px;
-    width: 29px;
-  }
-
-  .campaign-pause-mark {
-    border-width: 12px;
-    gap: 33px;
-    height: 275px;
-    top: -20px;
-    width: 275px;
-  }
-
-  .campaign-pause-mark span {
-    height: 125px;
-    width: 30px;
+  html {
+    zoom: .25;
   }
 }
 
