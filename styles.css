@@ -1009,6 +1009,8 @@ button:disabled { cursor: wait; opacity: .7; }
 
   .campaign-regulation-block > h2 {
     order: 2;
+    /* Match the heading-to-copy spacing used by the campaign heading above. */
+    margin-bottom: 28px;
   }
 
   .campaign-regulation-copy {
