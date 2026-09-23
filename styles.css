@@ -693,7 +693,7 @@ button:disabled { cursor: wait; opacity: .7; }
     background: var(--white);
     content: "";
     height: 1500px;
-    left: -308px;
+    left: -268px;
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -701,14 +701,14 @@ button:disabled { cursor: wait; opacity: .7; }
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
     position: absolute;
-    top: -160px;
-    width: 6680px;
+    top: -280px;
+    width: 6640px;
     z-index: 0;
   }
 
   .campaign-pause-mark {
     left: 50%;
-    top: -22px;
+    top: -142px;
     z-index: 4;
   }
 
