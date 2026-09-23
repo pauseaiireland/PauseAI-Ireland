@@ -667,14 +667,20 @@ button:disabled { cursor: wait; opacity: .7; }
   }
 
   .campaign-regulation-block::before {
+    height: 1500px;
     left: -2160px;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M0 0H1000V945C750 960 500 960 250 948S0 945 0 948Z'/%3E%3C/svg%3E");
     width: 5120px;
+  }
+
+  .campaign-pause-mark {
+    top: -22px;
   }
 
   .campaign-global-globe,
   .campaign-wave-tail {
-    margin-left: -2160px;
-    width: 5120px;
+    display: none;
   }
 }
 
