@@ -1051,6 +1051,13 @@ button:disabled { cursor: wait; opacity: .7; }
 
   .mobile-action-panel {
     margin: 0 0 40px;
+    position: relative;
+    top: 5px;
+  }
+
+  .mobile-action-button .preserve-case,
+  .representatives-page h1 .preserve-case {
+    text-transform: none;
   }
 
   .campaign-mobile-wave {
